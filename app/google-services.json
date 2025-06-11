@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "442310231465",
+    "project_id": "unione-7339a",
+    "storage_bucket": "unione-7339a.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:442310231465:android:1dbb5717415c552728b0b8",
+        "android_client_info": {
+          "package_name": "com.example.teamtilt"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCao0npIhGF7hIJf5dVP6fL67v2bcW46Qg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
