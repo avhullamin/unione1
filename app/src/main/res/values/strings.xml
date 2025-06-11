@@ -1,3 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">TeamTilt</string>
+    <string name="app_name">University App</string>
+    
+    <!-- Auth Screen -->
+    <string name="login">Login</string>
+    <string name="register">Register</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="university_id">University ID</string>
+    <string name="full_name">Full Name</string>
+    <string name="switch_to_register">Don\'t have an account? Register</string>
+    <string name="switch_to_login">Already have an account? Login</string>
+    
+    <!-- Dashboard -->
+    <string name="welcome">Welcome</string>
+    <string name="upcoming_events">Upcoming Events</string>
+    <string name="quick_links">Quick Links</string>
+    
+    <!-- Navigation -->
+    <string name="nav_dashboard">Dashboard</string>
+    <string name="nav_schedule">Schedule</string>
+    <string name="nav_materials">Materials</string>
+    <string name="nav_assignments">Assignments</string>
+    <string name="nav_notices">Notices</string>
+    <string name="nav_chat">Chat</string>
+    <string name="nav_profile">Profile</string>
 </resources>

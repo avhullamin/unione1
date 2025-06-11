@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/nav_dashboard"
+        android:icon="@drawable/ic_dashboard"
+        android:title="@string/nav_dashboard" />
+
+    <item
+        android:id="@+id/nav_schedule"
+        android:icon="@drawable/ic_schedule"
+        android:title="@string/nav_schedule" />
+
+    <item
+        android:id="@+id/nav_materials"
+        android:icon="@drawable/ic_materials"
+        android:title="@string/nav_materials" />
+
+    <item
+        android:id="@+id/nav_assignments"
+        android:icon="@drawable/ic_assignments"
+        android:title="@string/nav_assignments" />
+
+    <item
+        android:id="@+id/nav_notices"
+        android:icon="@drawable/ic_notices"
+        android:title="@string/nav_notices" />
+
+    <item
+        android:id="@+id/nav_chat"
+        android:icon="@drawable/ic_chat"
+        android:title="@string/nav_chat" />
+
+    <item
+        android:id="@+id/nav_profile"
+        android:icon="@drawable/ic_profile"
+        android:title="@string/nav_profile" />
+</menu> 

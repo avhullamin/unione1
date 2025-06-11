@@ -1,5 +1,26 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="black">#FF000000</color>
-    <color name="white">#FFFFFFFF</color>
+    <color name="colorPrimary">#1976D2</color>
+    <color name="colorPrimaryDark">#1565C0</color>
+    <color name="colorAccent">#03A9F4</color>
+    
+    <!-- Event Type Colors -->
+    <color name="eventTypeAcademic">#4CAF50</color>
+    <color name="eventTypeSocial">#FF9800</color>
+    <color name="eventTypeSports">#F44336</color>
+    <color name="eventTypeOther">#9C27B0</color>
+    
+    <!-- Text Colors -->
+    <color name="textPrimary">#212121</color>
+    <color name="textSecondary">#757575</color>
+    <color name="textHint">#BDBDBD</color>
+    
+    <!-- Background Colors -->
+    <color name="backgroundLight">#FFFFFF</color>
+    <color name="backgroundDark">#F5F5F5</color>
+    
+    <!-- Status Colors -->
+    <color name="statusSuccess">#4CAF50</color>
+    <color name="statusWarning">#FFC107</color>
+    <color name="statusError">#F44336</color>
 </resources>
