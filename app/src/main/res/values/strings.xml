@@ -21,9 +21,7 @@
     <string name="nav_dashboard">Dashboard</string>
     <string name="nav_schedule">Schedule</string>
     <string name="nav_materials">Materials</string>
-    <string name="nav_assignments">Assignments</string>
     <string name="nav_notices">Notices</string>
-    <string name="nav_chat">Chat</string>
     <string name="nav_profile">Profile</string>
     <string name="quick_link_icon">Quick Link</string>
 </resources>

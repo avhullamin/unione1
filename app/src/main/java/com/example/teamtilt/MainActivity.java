@@ -11,9 +11,7 @@ import com.example.teamtilt.databinding.ActivityMainBinding;
 import com.example.teamtilt.fragments.DashboardFragment;
 import com.example.teamtilt.fragments.ScheduleFragment;
 import com.example.teamtilt.fragments.MaterialsFragment;
-import com.example.teamtilt.fragments.AssignmentsFragment;
 import com.example.teamtilt.fragments.NoticesFragment;
-import com.example.teamtilt.fragments.ChatFragment;
 import com.example.teamtilt.fragments.ProfileFragment;
 import com.google.android.material.navigation.NavigationBarView;
 
@@ -45,12 +43,8 @@ public class MainActivity extends AppCompatActivity implements NavigationBarView
             fragment = new ScheduleFragment();
         } else if (itemId == R.id.nav_materials) {
             fragment = new MaterialsFragment();
-        } else if (itemId == R.id.nav_assignments) {
-            fragment = new AssignmentsFragment();
         } else if (itemId == R.id.nav_notices) {
             fragment = new NoticesFragment();
-        } else if (itemId == R.id.nav_chat) {
-            fragment = new ChatFragment();
         } else if (itemId == R.id.nav_profile) {
             fragment = new ProfileFragment();
         }
