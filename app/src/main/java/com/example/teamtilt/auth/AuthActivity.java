@@ -126,61 +126,13 @@ public class AuthActivity extends AppCompatActivity {
         binding.submitButton.setEnabled(false);
         binding.progressBar.setVisibility(View.VISIBLE);
 
-        auth.createUserWithEmailAndPassword(email, password)
-            .addOnSuccessListener(authResult -> {
-                Log.d(TAG, "Firebase Auth successful, creating user document");
-                User user = new User(
-                    authResult.getUser().getUid(),
-                    email,
-                    universityId,
-                    name,
-                    "STUDENT" // Default role
-                );
-
-                db.collection("users")
-                    .document(user.getUid())
-                    .set(user)
-                    .addOnSuccessListener(aVoid -> {
-                        Log.d(TAG, "User document created successfully");
-                        startActivity(new Intent(AuthActivity.this, MainActivity.class));
-                        finish();
-                    })
-                    .addOnFailureListener(e -> {
-                        Log.e(TAG, "Error creating user document: " + e.getMessage(), e);
-                        binding.submitButton.setEnabled(true);
-                        binding.progressBar.setVisibility(View.GONE);
-                        
-                        String errorMessage;
-                        if (e.getMessage().contains("already in use")) {
-                            errorMessage = "This email is already registered. Please login instead.";
-                        } else if (e.getMessage().contains("badly formatted")) {
-                            errorMessage = "Invalid email format. Please check your email.";
-                        } else if (e.getMessage().contains("password")) {
-                            errorMessage = "Password should be at least 6 characters long.";
-                        } else {
-                            errorMessage = "Registration failed: " + e.getMessage();
-                        }
-                        
-                        Toast.makeText(AuthActivity.this, errorMessage, Toast.LENGTH_LONG).show();
-                    });
-            })
-            .addOnFailureListener(e -> {
-                Log.e(TAG, "Firebase Auth failed: " + e.getMessage(), e);
-                binding.submitButton.setEnabled(true);
-                binding.progressBar.setVisibility(View.GONE);
-                
-                String errorMessage;
-                if (e.getMessage().contains("already in use")) {
-                    errorMessage = "This email is already registered. Please login instead.";
-                } else if (e.getMessage().contains("badly formatted")) {
-                    errorMessage = "Invalid email format. Please check your email.";
-                } else if (e.getMessage().contains("password")) {
-                    errorMessage = "Password should be at least 6 characters long.";
-                } else {
-                    errorMessage = "Registration failed: " + e.getMessage();
-                }
-                
-                Toast.makeText(AuthActivity.this, errorMessage, Toast.LENGTH_LONG).show();
-            });
+        // Start OTP verification activity
+        Intent intent = new Intent(AuthActivity.this, OTPVerificationActivity.class);
+        intent.putExtra("email", email);
+        intent.putExtra("password", password);
+        intent.putExtra("universityId", universityId);
+        intent.putExtra("name", name);
+        startActivity(intent);
+        finish();
     }
 } 

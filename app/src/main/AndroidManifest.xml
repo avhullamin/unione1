@@ -29,6 +29,10 @@
             </intent-filter>
         </activity>
         <activity
+            android:name=".auth.OTPVerificationActivity"
+            android:exported="false"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
             android:name=".MainActivity"
             android:exported="false"
             android:windowSoftInputMode="adjustResize" />
